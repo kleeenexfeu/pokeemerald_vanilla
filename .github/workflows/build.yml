@@ -37,17 +37,17 @@ jobs:
       - name: Compare
         run: make -j$(nproc) all syms
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: pokeemerald_vanilla
           path: pokeemerald.gba
           
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: pokeemerald_elf_vanilla
           path: pokeemerald.elf
           
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: pokeemerald_map_vanilla
           path: pokeemerald.map
